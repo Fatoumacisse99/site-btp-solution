@@ -365,11 +365,10 @@ ul.li{
         flex-direction: column;
      }
      .container-nos-propos P {
-        width: 400px;
+        width: 370px;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 700px;
         font-size: 40px;
      }
      .contenair-nos-propos .right img {
@@ -498,16 +497,12 @@ ul.li{
         
         .cadre-service h1 {
             font-size: 15px;
-            text-align: center;
-            
-            
+            text-align: center;    
         }
-        
         .cadre-service p {
             font-size: 15px;
             width: 100%;
         }
-        
         .container-nos-propos{
             flex-direction: column;
             gap: 20px;
@@ -550,7 +545,7 @@ ul.li{
             width: 100%;
         }
         .container-formulaire .left h2 {
-            margin-left: 17.5%;
+           font-size: 20px;
         }
         .nom-prenom {
             flex-direction: column;
@@ -562,7 +557,7 @@ ul.li{
             padding: 10px;
         }
         textarea#message {
-            width: 400px;
+            width: 320px;
         }
         
         .right iframe {
@@ -675,7 +670,7 @@ ul.li{
         gap: 20px;
     }
     .container-formulaire .left {
-        width: 90%;
+        width: 50%;
     }
     .container-formulaire .right iframe {
         width: 90%;
