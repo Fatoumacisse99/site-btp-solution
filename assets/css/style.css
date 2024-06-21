@@ -14,7 +14,7 @@ body{
    
 }
 header{
-    background-color: var(--bleu-header);  
+    background-color: var(--ecriture-bleu-p);  
     
 }
 .container{
@@ -99,9 +99,7 @@ nav ul li a {
 .ligne{
     width:100%;
     height: 1px;
-    background-color: var(--bordure-couleur); 
-   
-   
+    background-color: var(--bordure-couleur);    
 }
 .container-services img {
     width: 170px;
@@ -114,14 +112,12 @@ nav ul li a {
     justify-content: center;
     align-items: center;
     width: 355px;
-    height: 390px;
-   
+    height: 390px;   
 }
 .cadre-service h1 {
     font-weight: bold;
     font-size: 18px;
-    color: var(--bleu-header);
-   
+    color: var(--bleu-header);  
 }
 .cadre-service p {
     font-size: 17px;
@@ -134,7 +130,6 @@ nav ul li a {
     margin: auto;
     gap: 40px;
     margin-top: 40px;
-
 }
 .container-nos-propos .left {
     display: flex;
@@ -146,8 +141,11 @@ nav ul li a {
     margin-bottom: 7px;
 }
 .container-nos-propos .left p {
-    font-size: 23px;
+    font-size: 25px;
+    line-height: 1.4;
     color: var(--ecriture-bleu-p);
+
+
 }
 .container-nos-propos .right  {
     display: flex;
@@ -171,33 +169,36 @@ nav ul li a {
 }
 .client-avis {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     border: 1px solid var(--gris-bg) ;
     box-shadow: 0px 0.1px var(--gris-bg);
     gap: 10px;
-    margin: auto;    
+    margin: auto; 
+    padding: 10px ;
+   
 }
-.client-avis .img-client {
-    margin-left: 2%;
-}
-.client-avis .avis p {
+.img-client {
+    margin-top: -20%;    
+ }
+.avis p {
     font-size: 14px;
     color: var(--ecriture-bleu-p);
-    margin-top: 9%;
     width: 92%;
-
+  
+   
 }
-.client-avis .avis  h3 {
-    font-size: 12px;
-    margin-bottom: 9%;
+.avis h3 {
+    font-size: 15px;
     font-weight: bold;
     color: var(--bleu-header);
-    margin-top: -4px;
+    margin-bottom: 7px;  
+    margin-top: 30px; 
 }
-.client-avis .avis img {
-    margin-bottom:10px ;
-    margin-top: -5px;
+.avis img {
+    width: 70px;
+}
+.ligne-contact{
+  margin-bottom: 50px;
 }
 .container-formulaire {
     width: 85%;
@@ -205,10 +206,11 @@ nav ul li a {
     justify-content: center;
     justify-content: space-between;
     margin: auto; 
-    padding-top: 3%;   
+   
+   
 }
 .container-formulaire .left {
-    width: 500px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -217,17 +219,22 @@ nav ul li a {
 .container-formulaire .left h2 {
     align-self: self-start;
     color: var(--bleu-header);
+    font-size: 50px;
 }
-.container-formulaire .left form {
-    width: 50%;
+.container-formulaire .left .form {
+    width: 80%;
     height: auto;
 }
 .nom-prenom {
  display: flex;
  gap: 15px;
 }
- input {
-    padding: 10px 50px;
+.div {
+    width: 100%;
+}
+input {
+    width: 100%;
+    padding: 10px;
     border-radius: 8px;
     border: 1px solid var(--gris-bg) ;
     box-shadow: 0px 0.1px var(--gris-bg);
@@ -245,6 +252,7 @@ textarea#message {
     height: 160px;
     border-radius: 8px;
     resize: none;
+    padding: 10px;
 }
 .email-message button {
     margin-top: 20px;
@@ -258,9 +266,15 @@ textarea#message {
 Label {
    margin-top: 2%;
    margin-bottom: 1%;
-}   
+} 
+.container-formulaire .right{
+    width: 50%;
+}
 .right iframe {
     width: 550px;
+    height: 400px;
+   
+    
 }
 #contenair-contact {
     margin-top: 4%;
@@ -339,13 +353,13 @@ ul.li{
 .toggle-menu {
     display: none;
 }
-@media screen   and (max-width:991px){
-   body {
+@media screen and (max-width:991px){
+    body {
    overflow-x: hidden;
-   }
-   nav ul{
+    }
+    nav ul{
     display: none;
-   }
+     }
      .container-services {
         gap: 30px;
        
@@ -364,22 +378,23 @@ ul.li{
         flex-direction: column;
      }
      .container-nos-propos P {
-        width: 370px;
+        width: 400px;
         display: flex;
         justify-content: center;
-        align-items: center;
-        font-size: 40px;
+        text-align: left;
+        border-bottom: 10px;
      }
-     .contenair-nos-propos .right img {
-        width: 400px;
+     .contenair-nos-propos img {
+        width: 400px; 
         filter: brightness(80%);
-        box-shadow: 10px 10px var(--ecriture-bleu-p), -10px  -10px var(--ecriture-bleu-p);
-    
-    }
+        box-shadow: 15px 15px var(--ecriture-bleu-p), -10px  -10px var(--ecriture-bleu-p); 
+     }
      .container-nos-client {
         flex-direction: column;
-        gap: 40px;
-       
+        gap: 40px;   
+     }
+     .img-client {
+        margin-top: -8%;    
      }
      .client-avis {
         width: 520px;
@@ -400,7 +415,7 @@ ul.li{
         justify-content: center;
         position: relative;
         cursor: pointer;
-    }
+     }
     .toggle-menu::before {
         position: absolute;
         content: "";
@@ -428,26 +443,27 @@ ul.li{
      .toggle-menu.active::after {
         transform: translateY(0) rotate(-135deg); 
         box-shadow: 0 0 0  var(--primarybg);
-     }   
+    }
      header .menu.responsive {
         display: flex;
         position: absolute;
         top: 28px;
-        width: 60%;
+        width: 40%;
         display: flex;
         align-items: center;
-        background-color: #38586ce0;
+        background-color: var(--ecriture-bleu-p);
         box-shadow: 0 0 10px var(--primarybg);
         flex-direction:column;
         right: 0;
-        height: 50%;
+        height: 35%;
         line-height: 2;
+        border-radius: 10px;
+        gap: 15px;
+        text-align: center;
+       
      }
-     header .menu.responsive li {
-        margin: 25px O;
-    }  
-   
-    }
+
+}
      @media only screen and (max-width: 767px) {
        
         nav ul {
@@ -456,22 +472,18 @@ ul.li{
         header .container div img{
             width: 40px;   
         }
-        
         #accueil {
             background-size: cover;
             height: auto;
             padding: 14px;
             text-align: center;
         }
-        
         .heros h1 {
             font-size: 25px;
         }
-        
         .heros p {
             font-size: 20px;
         }
-        
         #accueil .heros button {
             font-size: 24px;
             padding: 8px 25px;
@@ -493,7 +505,6 @@ ul.li{
             width: 100px;
 
         }
-        
         .cadre-service h1 {
             font-size: 15px;
             text-align: center;    
@@ -525,21 +536,20 @@ ul.li{
             flex-direction: column;
             gap: 20px;
         }
-        
         .client-avis {
             width: 400px;
         }
-        
+        .img-client {
+            margin-top: -10%;    
+         }
         .container-formulaire {
             flex-direction: column;
             align-items: center;
             gap: 20px;
         }
-        
         .container-formulaire .left {
             width: 100%;
         }
-        
         .container-formulaire .left form {
             width: 100%;
         }
@@ -550,19 +560,17 @@ ul.li{
             flex-direction: column;
             gap: 10px;
         }
-        
         input {
             width: 100%;
             padding: 10px;
         }
-        textarea#message {
-            width: 320px;
+        .container-formulaire .right{
+            width: 100%;
         }
-        
         .right iframe {
-            width: 400px;
+            width: 100%;
+            margin: auto;
         }
-        
         #contenair-contact {
             text-align: center;
             padding: 20px;
@@ -612,11 +620,11 @@ ul.li{
             box-shadow: 0 10px 0  white;
             transform: translateY(-10px);
             transition: 0.5s;
-         }
+        }
          .toggle-menu.active::before {
             transform: translateY(0) rotate(135deg); 
             box-shadow: 0 0 0 #0d0e0d;   
-         }   
+        }   
          .toggle-menu::after { 
             position: absolute;
             content: "";
@@ -625,37 +633,35 @@ ul.li{
             background-color: white;
             border-radius: 6px;
             transform: translateY(10px);
-         }
+        }
          .toggle-menu.active::after {
             transform: translateY(0) rotate(-135deg); 
             box-shadow: 0 0 0  var(--primarybg);
-         }   
+        }   
          header .menu.responsive {
             display: flex;
             position: absolute;
-            top: 28px;
-            width: 90%;
+            top: 25px;
+            width: 30%;
             display: flex;
             align-items: center;
-            background-color: #38586ce0;
+            background-color: var(--ecriture-bleu-p);
             box-shadow: 0 0 10px var(--primarybg);
             flex-direction:column;
             right: 0;
-            height: 55%;
-            line-height: 2;
-         }
-         header .menu.responsive li {
-            margin: 25px O;
-        } 
+            height: 40%;
+            border-radius: 10px;
+            gap: 10px;
+            text-align: center;   
+        }
         .container-div{
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
-        } 
-       
+            align-items: center
+        }   
     }
-@media screen and (max-width: 480px) {
+    @media screen and (max-width: 480px) {
     .container img {
         width: 30px;
     }
@@ -669,10 +675,37 @@ ul.li{
         gap: 20px;
     }
     .container-formulaire .left {
-        width: 50%;
+        width: 100%;
     }
-    .container-formulaire .right iframe {
+    .container-nos-propos .left{
+        width: 100%;
+    }
+    .container-nos-propos .left p{
+        font-size: 17px;
         width: 90%;
     }
+
+    .container-formulaire .right iframe {
+        width: 100%;
+    }
+    
+    header .menu.responsive {
+        display: flex;
+        position: absolute;
+        top: 28px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: var(--ecriture-bleu-p);
+        box-shadow: 0 0 10px var(--primarybg);
+        flex-direction:column;
+        right: 0;
+        height: 60%;
+        line-height: 2;
+        border-radius: 10px;
+        gap: 15px;
+        text-align: center;
+       
+     }
 }
     
