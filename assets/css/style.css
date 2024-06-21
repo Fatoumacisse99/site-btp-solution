@@ -53,6 +53,8 @@ nav ul li a {
 #accueil{
     margin-top: -1px;
     background-image: url("../images/img-font-heros.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 500px;
     display: flex;
     flex-direction: column;
