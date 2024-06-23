@@ -408,6 +408,16 @@ ul.li{
         align-items: center;
         gap: 20px;
      }
+     .container-formulaire {
+        gap: 20px;
+    }
+    .container-formulaire .left {
+        width: 80%;
+    }
+    .container-formulaire .right iframe {
+        width: 100%;
+       
+    }
      .toggle-menu {
         display: flex;
         height: 40px;
