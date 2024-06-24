@@ -712,7 +712,7 @@ ul.li{
         box-shadow: 0 0 10px var(--primarybg);
         flex-direction:column;
         right: 0;
-        height: 60%;
+        height: 45%;
         line-height: 2;
         border-radius: 10px;
         gap: 15px;
