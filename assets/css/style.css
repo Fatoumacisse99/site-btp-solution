@@ -185,8 +185,8 @@ nav ul li a {
 .avis p {
     font-size: 14px;
     color: var(--ecriture-bleu-p);
-    width: 92%;
-  
+   margin-left: -50px;
+
    
 }
 .avis h3 {
@@ -704,7 +704,7 @@ ul.li{
     header .menu.responsive {
         display: flex;
         position: absolute;
-        top: 28px;
+        top: 25px;
         width: 100%;
         display: flex;
         align-items: center;
